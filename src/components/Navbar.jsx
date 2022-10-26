@@ -1,10 +1,11 @@
 import React from "react";
-import { Image } from "../Imagenes/logo.png";
+import Image  from "../Imagenes/logo.png";
 import CartWidget from './CartWidget'
 
 
 
-export default function Navbar({ color }) {
+
+export default function Navbar() {
   return (
     <div style={{ background: "linear-gradient(180deg, rgba(00, 0, 1, 14) 15%, rgba(0, 22, 55, 1) 100%)",}}>
       <h1 style={{display:"flex", justifyContent:" space-around"}}>Comida Para Oficina</h1>
@@ -21,5 +22,6 @@ export default function Navbar({ color }) {
         <CartWidget/>
       </ul>
     </div>
+    
   )
   }
