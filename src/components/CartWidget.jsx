@@ -1,5 +1,4 @@
 import React from "react";
-import Imagen from '../Imagenes/carritoCompras2.png';
 
 export default function CartWidget() {
     return(

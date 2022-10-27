@@ -1,16 +1,22 @@
-import './App.css';
-import NavBar from './components/Navbar';
-import Body from './components/Body';
-import ItemListContainer from './components/ItemListContainer';
+import "./App.css";
+import Footer from "./components/Footer";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/Navbar";
+
+
 
 
 function App() {
   return (
-    <>
-    <NavBar/>
-    <ItemListContainer/>
-    <Body/>
-    </>
+    <div>
+      <NavBar />
+      <ItemListContainer greeting={"Estimados, pagina en remodelacion, disculpe las molestias"} />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <Footer/>
+    </div>
   );
 }
 
