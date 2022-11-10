@@ -1,15 +1,9 @@
 import React from "react";
-
+import ShoppingBag from '@mui/icons-material/ShoppingBag';
 export default function CartWidget() {
 return (
     <>
-      <div style={{ paddingTop: "0px" }}>
-        <img
-          style={{ marginTop: "-22px", height: "60px", display: "flex" }}
-          src={require("../Imagenes/carritoCompras2.png")}
-          alt="Carrito de compras"
-        />
-      </div>
+      <ShoppingBag BackgroundColor="Light"/>
     </>
 
 );

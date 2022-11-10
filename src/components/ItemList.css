@@ -1,0 +1,8 @@
+.Listado{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    margin: 10px;
+    background-color: gray;
+}

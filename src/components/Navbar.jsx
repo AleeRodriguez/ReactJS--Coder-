@@ -1,27 +1,40 @@
 import React from "react";
 import CartWidget from "./CartWidget";
+import './Navbar.css';
 
 export default function Navbar() {
   return (
-    <div style={{ background: "linear-gradient(180deg, rgba(00, 0, 1, 14) 15%, rgba(0, 22, 55, 1) 100%)" }}>
-      <h1 style={{ display: "flex", justifyContent: " space-around", color: "#195da2", justifyContent: "center" }}>
+    <div className="Header">
+      <h1 className="Titulo">
         Comida Para Oficina
         <img style={{ height: "50px" }} src={require('../Imagenes/logo.png')} alt="Logo" />
       </h1>
       <div style={{ display: "flex", justifyContent: " space-around" }}></div>
-      <ul style={{ display: "flex", justifyContent: " space-evenly", listStyle: "none", fontWeight: "bold" }}>
-        <li style={{ textDecoration: "none" }}>
+      <ol className="secciones">
+        <li>
           <a href="../App.js" style={{ color: "white" }}>
             Home
           </a>
         </li>
-        <li style={{ textDecoration: "none", color: "white" }}>
+        <li>
           <a href="../App.js" style={{ color: "white" }}>
-            Products
+            Productos
           </a>
         </li>
-        <CartWidget />
-      </ul>
+        <li>
+          <a href="../App.js" style={{ color: "white" }}>
+            Bebidas
+          </a>
+        </li>
+        <li>
+          <a href="../App.js" style={{ color: "white" }}>
+            Nosotros
+          </a>
+        </li>
+        <div className="Carrito">
+        <CartWidget/>
+        </div>
+      </ol>
     </div>
 );
 }
